@@ -1,0 +1,37 @@
+LookAt 5 -10 5
+  0 0 0
+  0 0 1
+Camera "perspective"
+    "float fov" [ 39 ]
+Film "rgb"
+    "string filename" [ "cube_ply_test.pfm" ]
+    "integer yresolution" [ 480 ]
+    "integer xresolution" [ 480 ]
+Sampler "independent"
+  "integer pixelsamples" 100
+Integrator "simplepath"
+Accelerator "bvh"
+  "string splitmethod" "middle"
+
+WorldBegin
+
+# light source
+# uniform blue-ish illumination from all directions
+LightSource "infinite" "rgb L" [ .4 .4 .5 ]
+
+AttributeBegin
+    Material "diffuse"
+        "rgb reflectance" [ 0 0 0 ]
+    Translate -5 0 5
+    AreaLightSource "diffuse"
+        "rgb L" [ 100 100 100 ]
+    Shape "sphere"
+        "float radius" [ 2 ]
+AttributeEnd
+
+AttributeBegin
+    Material "diffuse"
+        "rgb reflectance" [ 0.1 0.1 0.8 ]
+    Shape "plymesh"
+        "string filename" [ "geometry/cube.ply" ]
+AttributeEnd

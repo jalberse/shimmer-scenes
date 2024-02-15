@@ -2,7 +2,7 @@
 LookAt 278 273 -800    278 273 0    0 1 0
 Camera "perspective" "float fov" [37.5]
 Sampler "independent"
-  "integer pixelsamples" 64
+  "integer pixelsamples" 256
 Film "rgb"
    "string filename" ["cornell_bunny_conductor.pfm"]
    "integer xresolution" [1000]
