@@ -10,7 +10,7 @@ Film "rgb"
     "integer xresolution" [ 480 ]
 Sampler "independent"
   "integer pixelsamples" 10
-Integrator "simplepath"
+Integrator "path"
 Accelerator "bvh"
   "string splitmethod" "middle"
 
