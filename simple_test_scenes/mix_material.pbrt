@@ -8,7 +8,7 @@ Film "rgb"
     "integer yresolution" [ 480 ]
     "integer xresolution" [ 480 ]
 Sampler "independent"
-  "integer pixelsamples" 1
+  "integer pixelsamples" 100
 Integrator "path"
 Accelerator "bvh"
   "string splitmethod" "middle"
@@ -17,29 +17,21 @@ WorldBegin
 
 # light source
 # uniform blue-ish illumination from all directions
-LightSource "infinite" "rgb L" [ .4 .4 .5 ]
-
-AttributeBegin
-    Material "diffuse"
-        "rgb reflectance" [ 0 0 0 ]
-    Translate 0 0 30
-    AreaLightSource "diffuse"
-        "rgb L" [ 1000 1000 1000 ]
-    Shape "sphere"
-        "float radius" [ 10 ]
-AttributeEnd
+LightSource "infinite" "rgb L" [ .8 .8 .8 ]
 
 MakeNamedMaterial "mat1"
     "string type" [ "diffuse" ]
-    "rgb reflectance" [ 0.7 0.7 0.7 ]
+    "rgb reflectance" [ 0.9 0.0 0.0 ]
 
 MakeNamedMaterial "mat2"
     "string type" [ "diffuse" ]
-    "rgb reflectance" [ 0.0 0.0 0.0 ]
+    "rgb reflectance" [ 0.0 0.0 9.0 ]
 
 AttributeBegin
     Material "mix"
         "string materials" [ "mat1" "mat2" ]
+        # will mix to purple
+        "float amount" 0.5
     Translate 0 0 0
     Shape "sphere"
         "float radius" [ 10 ]
