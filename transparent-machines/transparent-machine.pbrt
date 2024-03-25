@@ -4,11 +4,11 @@ Camera "perspective"
     "float fov" [ 12 ]
 Film "rgb"
     "float maxcomponentvalue" 10
-    "string filename" [ "frame542.pfm" ]
+    "string filename" [ "frame542-1000-spp-sky-mid-blended.pfm" ]
     "integer yresolution" [ 840 ]
     "integer xresolution" [ 1920 ]
 Sampler "independent"
-    "integer pixelsamples" [ 10 ]
+    "integer pixelsamples" [ 1000 ]
 
 Integrator "path"
     "integer maxdepth" [ 256 ]
@@ -20,20 +20,16 @@ PixelFilter "box"
 
 WorldBegin
 
-# AttributeBegin
-#     Rotate 220 0 1 0
-#     Rotate 90 1 0 0
-#     LightSource "infinite"
-#         "float scale" [6]
-#         "string filename" "textures/sky.exr"
-# AttributeEnd
+AttributeBegin
+    Rotate 220 0 1 0
+    Rotate 90 1 0 0
+    LightSource "infinite"
+        "float scale" [6]
+        "string filename" "textures/sky-mid-blended.png"
+AttributeEnd
 
-# light source
-# uniform blue-ish illumination from all directions
-LightSource "infinite" "rgb L" [ .4 .45 .5 ]
-
-# Material "dielectric" "spectrum eta" "glass-BK7"
-Material "dielectric"
+Material "dielectric" "spectrum eta" "glass-BK7"
+# Material "dielectric"
 
 AttributeBegin
     ObjectBegin "single arm 0"

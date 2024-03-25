@@ -24,23 +24,8 @@ AttributeBegin
 AttributeEnd
 
 AttributeBegin
-    Material "diffuse"
-        "rgb reflectance" [ 0.1 0.1 0.8 ]
+    Material "conductor"
     Translate 0 0 0
     Shape "sphere"
-        "float radius" [ 10 ]
-AttributeEnd
-
-AttributeBegin
-    Material "dielectric"
-    Translate 21 0 0
-    Shape "sphere"
-        "float radius" [ 10 ]
-AttributeEnd
-
-AttributeBegin
-    Material "conductor"
-    Translate -21 0 0
-    Shape "sphere"
-        "float radius" [ 10 ]
+        "float radius" [ 25 ]
 AttributeEnd
