@@ -1,0 +1,75 @@
+LookAt 0 -100 50
+  0 0 0
+  0 0 1
+Camera "perspective"
+    "float fov" [ 39 ]
+Film "rgb"
+    "string filename" [ "bk7-sphere.pfm" ]
+    "integer yresolution" [ 480 ]
+    "integer xresolution" [ 480 ]
+Sampler "independent"
+  "integer pixelsamples" 1000
+Integrator "path"
+    "integer maxdepth" [ 256 ]
+Accelerator "bvh"
+  "string splitmethod" "middle"
+
+WorldBegin
+
+# light source
+# uniform blue-ish illumination from all directions
+LightSource "infinite" "rgb L" [ .4 .45 .5 ]
+
+# Big area light
+AttributeBegin
+    Material "diffuse"
+        "rgb reflectance" [ 0 0 0 ]
+    Translate 0 0 30
+    AreaLightSource "diffuse"
+        "rgb L" [ 100 100 100 ]
+    Shape "sphere"
+        "float radius" [ 10 ]
+AttributeEnd
+
+# Sphere
+AttributeBegin
+    Material "dielectric"
+        "spectrum eta" "glass-BK7"
+    Shape "sphere"
+        "float radius" [ 20 ]
+AttributeEnd
+
+AttributeBegin
+    Material "dielectric"
+        "spectrum eta" "glass-BK7"
+    Shape "sphere"
+        "float radius" [ 19 ]
+AttributeEnd
+
+AttributeBegin
+    Material "dielectric"
+        "spectrum eta" "glass-BK7"
+    Shape "sphere"
+        "float radius" [ 18 ]
+AttributeEnd
+
+AttributeBegin
+    Material "dielectric"
+        "spectrum eta" "glass-BK7"
+    Shape "sphere"
+        "float radius" [ 17 ]
+AttributeEnd
+
+AttributeBegin
+    Material "dielectric"
+        "spectrum eta" "glass-BK7"
+    Shape "sphere"
+        "float radius" [ 16 ]
+AttributeEnd
+
+AttributeBegin
+    Material "dielectric"
+        "spectrum eta" "glass-BK7"
+    Shape "sphere"
+        "float radius" [ 15 ]
+AttributeEnd
