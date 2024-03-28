@@ -9,9 +9,10 @@ Film "rgb"
     "integer xresolution" [ 1920 ]
     
 Sampler "independent"
-    "integer pixelsamples" [ 1000 ]
+    "integer pixelsamples" [ 1024 ]
 Integrator "path"
     "integer maxdepth" [ 256 ]
+    "string lightsampler" "uniform"
 Accelerator "bvh"
   "string splitmethod" "middle"
 PixelFilter "box"
