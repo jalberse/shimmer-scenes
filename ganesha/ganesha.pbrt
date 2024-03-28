@@ -12,6 +12,7 @@ LookAt 328 40.282 245
 Camera "perspective"
     "float fov" [ 30 ]
 Integrator "path"
+    "string lightsampler" "uniform"
 Accelerator "bvh"
   "string splitmethod" "middle"
 

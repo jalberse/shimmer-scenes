@@ -1,4 +1,5 @@
 Integrator "path" "integer maxdepth" 15 
+  "string lightsampler" "uniform"
 PixelFilter "box"
 Accelerator "bvh"
   "string splitmethod" "middle"
