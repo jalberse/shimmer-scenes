@@ -13,8 +13,7 @@ Camera "perspective"
     "float focaldistance" [ 17 ]
     "float fov" [ 47 ]
 Sampler "independent"
-    # TODO swap back to 512
-    "integer pixelsamples" [ 1 ]
+    "integer pixelsamples" [ 512 ]
 Integrator "path"
     "integer maxdepth" [ 100 ]
 PixelFilter "box"

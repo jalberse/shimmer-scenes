@@ -1,0 +1,26 @@
+Integrator "path" "integer maxdepth" 15 
+PixelFilter "box"
+Accelerator "bvh"
+  "string splitmethod" "middle"
+Sampler "independent"
+    "integer pixelsamples" [ 100 ]
+
+# - Camera 1: Camera_01___Main_
+#   - Aspect ratio : 0.75
+Film "rgb"
+    "float maxcomponentvalue" 10
+    "integer yresolution" [ 500 ]
+    "integer xresolution" [ 500 ]
+    "string filename" [ "kroken-camera-1-ortho.pfm" ]
+Scale -1 1 1
+LookAt 359.17828 157 469.45972
+    359.17828 156.947 468.45972
+    0 1 0
+Camera "orthographic"
+    "float screenwindow" [ -0.0001 0.0001 ]
+
+WorldBegin
+
+Include "lights.pbrt"
+Include "materials.pbrt"
+Include "geometry.pbrt"

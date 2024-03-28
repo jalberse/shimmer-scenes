@@ -7,15 +7,13 @@ Film "rgb"
     "string filename" [ "frame542-1000-spp-sky-mid-blended.pfm" ]
     "integer yresolution" [ 840 ]
     "integer xresolution" [ 1920 ]
+    
 Sampler "independent"
     "integer pixelsamples" [ 1000 ]
-
 Integrator "path"
     "integer maxdepth" [ 256 ]
-
 Accelerator "bvh"
   "string splitmethod" "middle"
-
 PixelFilter "box"
 
 WorldBegin
