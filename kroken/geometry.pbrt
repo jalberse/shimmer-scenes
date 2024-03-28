@@ -3144,7 +3144,7 @@ AttributeBegin
     ObjectBegin "longue-127"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00127.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .05
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .05
    ObjectEnd
     Identity
     ObjectInstance "longue-127"
@@ -3159,7 +3159,7 @@ AttributeBegin
     ObjectBegin "longue-128"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00128.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
    ObjectEnd
     Identity
     ObjectInstance "longue-128"
@@ -3175,7 +3175,7 @@ AttributeBegin
     ObjectBegin "longue-129"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00129.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .05
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .05
    ObjectEnd
     Identity
     ObjectInstance "longue-129"
@@ -3191,7 +3191,7 @@ AttributeBegin
     ObjectBegin "longue-130"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00130.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .05
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .05
    ObjectEnd
     Identity
     ObjectInstance "longue-130"
@@ -3207,9 +3207,9 @@ AttributeBegin
     ObjectBegin "longue-131"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00131-000.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .04
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .04
         Shape "plymesh" "string filename" "geometry/mesh_00131-001.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .04
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .04
    ObjectEnd
     Identity
     ObjectInstance "longue-131"
@@ -3225,7 +3225,7 @@ AttributeBegin
     ObjectBegin "longue-132"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00132.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
    ObjectEnd
     Identity
     ObjectInstance "longue-132"
@@ -3241,9 +3241,9 @@ AttributeBegin
     ObjectBegin "longue-133"
         NamedMaterial "Fabric - Chaise Longue "
         Shape "plymesh" "string filename" "geometry/mesh_00133-000.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
         Shape "plymesh" "string filename" "geometry/mesh_00133-001.ply"
-            "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
+            # "texture displacement" "float:textures/Fabric - Chaise longue-scaled" "float edgelength" .1
    ObjectEnd
     Identity
     ObjectInstance "longue-133"
@@ -3582,8 +3582,8 @@ AttributeBegin
     ObjectBegin "carpet"
         NamedMaterial "Carpet"
         Shape "plymesh" "string filename" "geometry/mesh_00162.ply"
-        "texture displacement" "float:textures/Carpet_Displacement"
-          "float edgelength" .1
+        # "texture displacement" "float:textures/Carpet_Displacement"
+          # "float edgelength" .1
     ObjectEnd
     Identity
     ObjectInstance "carpet"
